@@ -6,6 +6,10 @@ queue <pair<int, int>> que;
 int main() {
 	int A, B, C;
 	cin >> A >> B;
+	if (A == B) {
+		cout << 0;
+		return 0;
+	}
 	int visit[200010] = { 0 };
 	que.push(pair<int, int>(A + 1, 1));
 	que.push(pair<int, int>(A - 1, 1));
