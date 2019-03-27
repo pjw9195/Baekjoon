@@ -30,11 +30,11 @@ int main() {
 				break;
 			}
 		}
-		if (visit[x + 1] == 0 && x+1 <= 99999) {
+		if (x + 1 <= 99999 && visit[x + 1] == 0) {
 			que.push(pair<int, int>(x + 1, y + 1));
 			visit[x + 1] = 1;
 		}
-		if (visit[x2] ==0 && x != 0 && 2 * x <= 99999) {
+		if (x != 0 && 2 * x <= 99999 && visit[x2] == 0) {
 			que.push(pair<int, int>(x2, y + 1));
 			visit[x2] = 1;
 		}
