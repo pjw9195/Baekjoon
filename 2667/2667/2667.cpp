@@ -42,6 +42,6 @@ int main() {
 	sort(sor, sor+ 10000, greater<int>());
 	cout << res << '\n';
 	for (int i = res-1; i >= 0; i--) {
-		cout << sor[i] << '\n';
+		cout << sor[i]+1 << '\n';
 	}
 }
