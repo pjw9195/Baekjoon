@@ -22,5 +22,8 @@ int main() {
 			*it = temp;
 		}
 	}
-	cout << count;
+	cout << count << '\n';
+	for (int i = 1; i < v1.size(); i++) {
+		cout << v1[i] << " ";
+	}
 }
